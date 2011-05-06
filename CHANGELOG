@@ -1,0 +1,5 @@
+Flexiefox Changelog
+--------------------
+1.0.000001
+- FEATURE: Added support for t1.micro, cc1.4xlarge and cg1.4xlarge instance types.
+- FIX: Support Firefox 4.0
