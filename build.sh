@@ -32,7 +32,7 @@ else
     export SED_ARGS="-i"
 fi
 
-export PKG_VERSION=1.1
+export PKG_VERSION=1.0
 export PKG_RELEASE=$(get_pkg_release)
 export PKG_NAME=hybridfox
 export BASE=$PKG_NAME-$PKG_VERSION.$PKG_RELEASE
@@ -60,7 +60,7 @@ popd > /dev/null
 # make the chrome jar
 pushd build/$BASE/chrome > /dev/null
   rm -f ec2ui.jar
-  $JAVA_HOME/bin/jar cf ec2ui.jar content locale skin
+  "$JAVA_HOME/bin/jar" cf ec2ui.jar content locale skin
 popd > /dev/null
 
 # prepare source for bundling
