@@ -175,7 +175,12 @@ var ec2ui_AMIsTreeView = {
 
         if (retVal.ok) {
             this.newInstanceTag = retVal.tag || "";
-
+            var blockDeviceMappings = null;
+            if (retVal.overrideRootVolumeSize != "") {
+                blockDeviceMappings = [];
+                rootMapping = { deviceName : "/dev/sda1", volumeSize: retVal.overrideRootVolumeSize };
+                blockDeviceMappings.push(rootMapping);
+            }
             ec2ui_session.controller.runInstances(
                retVal.imageId,
                retVal.kernelId,
@@ -184,6 +189,7 @@ var ec2ui_AMIsTreeView = {
                retVal.maxCount,
                retVal.keyName,
                retVal.securityGroups,
+               blockDeviceMappings,
                retVal.userData,
                retVal.properties,
                retVal.instanceType,

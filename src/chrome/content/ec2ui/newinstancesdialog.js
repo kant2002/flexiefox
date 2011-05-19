@@ -19,6 +19,7 @@ var ec2_InstanceLauncher = {
         this.retVal.instanceType = document.getElementById("ec2ui.newinstances.instancetypelist").selectedItem.value;
         this.retVal.minCount = document.getElementById("ec2ui.newinstances.min").value.trim();
         this.retVal.maxCount = document.getElementById("ec2ui.newinstances.max").value.trim();
+        this.retVal.overrideRootVolumeSize = document.getElementById("ec2ui.newinstances.overrideRootVolumeSize").value.trim();
         this.retVal.tag = document.getElementById("ec2ui.newinstances.tag").value.trim();
         this.retVal.securityGroups = this.used;
 
@@ -70,13 +71,28 @@ var ec2_InstanceLauncher = {
         return true;
     },
 
+    /**
+     * @description Validates value entered in the Override Root Volume Size text box.
+     */
+    validateOverrideRootVolumeSize : function() {
+        // Assumes validateMin has been called
+        var overrideRootVolumeSizeTextBox = document.getElementById("ec2ui.newinstances.overrideRootVolumeSize");
+        if (overrideRootVolumeSizeTextBox.value.trim() == "")
+            return true;
+        var overrideRootVolumeSize = parseInt(overrideRootVolumeSizeTextBox.value);
+        if (overrideRootVolumeSize <= 0 || isNaN(overrideRootVolumeSize)) {
+            alert("Size of root volume must be a positive integer");
+            maxtextbox.select();
+            return false;
+        }
+    },
+
     validateMax : function() {
         // Assumes validateMin has been called
         var maxtextbox = document.getElementById("ec2ui.newinstances.max");
         var maxval = parseInt(maxtextbox.value);
         if (maxval <= 0 || isNaN(maxval)) {
             alert("Maximum value must be a positive integer");
-            maxtextbox.select();
             return false;
         }
         var mintextbox = document.getElementById("ec2ui.newinstances.min");
