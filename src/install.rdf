@@ -6,8 +6,8 @@
   <Description about="urn:mozilla:install-manifest">
     <em:id>{E78EF1D0-7263-11E0-B3D6-D8244824019B}</em:id>
     <em:type>2</em:type>
-    <em:version>1.7.000116</em:version>
-    <em:file resource="urn:mozilla:extension:file:ec2ui.jar"/>
+    <em:version>__VERSION__.__BUILD__</em:version>
+    <em:file resource="urn:mozilla:extension:file:awsui.jar"/>
 
     <!-- Target Application this extension can install into,
          with minimum and maximum supported versions. -->
@@ -27,7 +27,7 @@
     <!-- <em:updateURL>http://ec2-184-73-192-99.compute-1.amazonaws.com/ec2ui/ec2ui.rdf</em:updateURL> -->
   </Description>
 
-  <Description about="urn:mozilla:extension:file:ec2ui.jar"
+  <Description about="urn:mozilla:extension:file:awsui.jar"
                    em:package="content/ec2ui/"
                    em:skin="skin/classic/ec2ui/">
     <em:locale>locale/ec2ui/en-US/</em:locale>

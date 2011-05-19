@@ -7,7 +7,7 @@
     <r:Seq>
       <r:li>
         <r:Description>
-          <version>1.7.000116</version>
+          <version>__VERSION__.__BUILD__</version>
           <targetApplication>
 
             <r:Description>
