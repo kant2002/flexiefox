@@ -15,7 +15,7 @@
 
 <!DOCTYPE window SYSTEM "chrome://ec2ui/locale/ec2ui.dtd">
 <window id="ec2ui-window" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
-  xmlns:html="http://www.w3.org/1999/xhtml" title="Elasticfox" orient="vertical"
+  xmlns:html="http://www.w3.org/1999/xhtml" title="Flexiefox" orient="vertical"
   persist="width height screenX screenY sizemode" onload="ec2ui_session.initialize()">
 
   <!-- Third party libraries -->

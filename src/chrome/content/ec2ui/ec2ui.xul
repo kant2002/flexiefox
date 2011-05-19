@@ -13,11 +13,11 @@
   <script type="application/x-javascript" src="chrome://ec2ui/content/client.js" />
 
   <menupopup id="menu_ToolsPopup">
-    <menuitem id="ec2ui_menu" oncommand="ec2ui_session.openMainWindow();" insertafter="javascriptConsole,devToolsSeparator" label="Elasticfox"/>
+    <menuitem id="flexiefox_menu" oncommand="ec2ui_session.openMainWindow();" insertafter="javascriptConsole,devToolsSeparator" label="Flexiefox"/>
   </menupopup>
   <!-- statusbar id="status-bar">
     <statusbarpanel id="efox-statusicon" label="Hello, World" onclick="ec2ui_session.openMainWindow();">
-      <image tooltiptext="Open Elasticfox" id="efox-statusImage"
+      <image tooltiptext="Open Flexiefox" id="efox-statusImage"
         src="chrome://ec2ui/content/images/cash.png"/>
     </statusbarpanel>
   </statusbar -->
