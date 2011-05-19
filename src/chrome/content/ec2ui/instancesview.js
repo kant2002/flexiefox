@@ -853,6 +853,7 @@ var ec2ui_InstancesTreeView = {
            instance.groupList,
            null,
            null,
+           null,
            instance.instanceType,
            instance.placement,
            instance.subnetId,
