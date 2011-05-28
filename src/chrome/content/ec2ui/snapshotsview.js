@@ -56,7 +56,7 @@ var ec2ui_SnapshotTreeView = {
     viewDetails : function(event) {
         var image = this.getSelectedImage();
         if (image == null) return;
-        window.openDialog("chrome://ec2ui/content/dialog_snapshot_details.xul", null, "chrome,centerscreen,modal", image);
+        window.openDialog("chrome://flexiefox/content/dialog_snapshot_details.xul", null, "chrome,centerscreen,modal", image);
     },
 
     deleteSnapshot : function () {

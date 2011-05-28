@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
-<!DOCTYPE window SYSTEM "chrome://ec2ui/locale/ec2ui.dtd">
+<!DOCTYPE window SYSTEM "chrome://flexiefox/locale/ec2ui.dtd">
 
 <dialog id="ec2ui.dialog.delete.ami" style="width:450px; height:150px;"
   xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
@@ -11,15 +11,15 @@
   title="Elasticfox AMI Deleter">
 
   <script type="application/x-javascript"
-    src="chrome://ec2ui/content/deleteamidialog.js" />
+    src="chrome://flexiefox/content/deleteamidialog.js" />
   <script type="application/x-javascript"
-    src="chrome://ec2ui/content/controller.js" />
+    src="chrome://flexiefox/content/controller.js" />
   <script type="application/x-javascript"
-    src="chrome://ec2ui/content/session.js" />
+    src="chrome://flexiefox/content/session.js" />
   <script type="application/x-javascript"
-    src="chrome://ec2ui/content/preferences.js" />
+    src="chrome://flexiefox/content/preferences.js" />
   <script type="application/x-javascript"
-    src="chrome://ec2ui/content/utils.js" />
+    src="chrome://flexiefox/content/utils.js" />
 
   <groupbox flex="1">
     <caption label="AMI Deletion Progress" />

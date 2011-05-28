@@ -154,7 +154,7 @@ var ec2_httpclient = {
     errorDialog : function(msg, code, rId, fStr) {
         var retry = {value:null};
         window.openDialog(
-            "chrome://ec2ui/content/dialog_retry_cancel.xul",
+            "chrome://flexiefox/content/dialog_retry_cancel.xul",
             null,
             "chrome,centerscreen,modal",
             msg,

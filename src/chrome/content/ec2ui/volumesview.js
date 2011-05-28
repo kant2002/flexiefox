@@ -73,7 +73,7 @@ var ec2ui_VolumeTreeView = {
     viewDetails : function(event) {
         var image = this.getSelectedImage();
         if (image == null) return;
-        window.openDialog("chrome://ec2ui/content/dialog_volume_details.xul", null, "chrome,centerscreen,modal", image);
+        window.openDialog("chrome://flexiefox/content/dialog_volume_details.xul", null, "chrome,centerscreen,modal", image);
     },
 
     enableOrDisableItems : function() {
@@ -115,7 +115,7 @@ var ec2ui_VolumeTreeView = {
     createVolume : function (snap) {
         var retVal = {ok:null};
         if (!snap) snap = null;
-        window.openDialog("chrome://ec2ui/content/dialog_new_volume.xul",
+        window.openDialog("chrome://flexiefox/content/dialog_new_volume.xul",
                           null,
                           "chrome,centerscreen,modal",
                           snap,
@@ -185,7 +185,7 @@ var ec2ui_VolumeTreeView = {
         if (image == null) return;
         var retVal = {ok:null};
         while (true) {
-            window.openDialog("chrome://ec2ui/content/dialog_new_attachment.xul",
+            window.openDialog("chrome://flexiefox/content/dialog_new_attachment.xul",
                               null,
                               "chrome,centerscreen,modal",
                               image,

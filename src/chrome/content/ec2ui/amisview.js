@@ -165,7 +165,7 @@ var ec2ui_AMIsTreeView = {
         this.newInstanceTag = null;
 
         window.openDialog(
-            "chrome://ec2ui/content/dialog_new_instances.xul",
+            "chrome://flexiefox/content/dialog_new_instances.xul",
             null,
             "chrome,centerscreen,modal",
             image,
@@ -215,7 +215,7 @@ var ec2ui_AMIsTreeView = {
     registerNewImage : function () {
         var retVal = {ok:null,manifestPath:null};
         window.openDialog(
-            "chrome://ec2ui/content/dialog_register_image.xul",
+            "chrome://flexiefox/content/dialog_register_image.xul",
             null,
             "chrome,centerscreen,modal",
             ec2ui_session,
@@ -268,7 +268,7 @@ var ec2ui_AMIsTreeView = {
             return;
         }
 
-        window.openDialog("chrome://ec2ui/content/dialog_migrate_ami.xul",
+        window.openDialog("chrome://flexiefox/content/dialog_migrate_ami.xul",
                           null,
                           "chrome,centerscreen,modal",
                           image,
@@ -283,7 +283,7 @@ var ec2ui_AMIsTreeView = {
             retVal.ok = false;
 
             // Finish up AMI migration with visual prompts
-            window.openDialog("chrome://ec2ui/content/dialog_copy_S3_keys.xul",
+            window.openDialog("chrome://flexiefox/content/dialog_copy_S3_keys.xul",
                               null,
                               "chrome, dialog, centerscreen, resizable=yes",
                               ec2ui_session,
@@ -321,7 +321,7 @@ var ec2ui_AMIsTreeView = {
 
         if (fDelete) {
             var retVal = {ok:null};
-            window.openDialog("chrome://ec2ui/content/dialog_delete_ami.xul",
+            window.openDialog("chrome://flexiefox/content/dialog_delete_ami.xul",
                               null,
                               "chrome,centerscreen,modal",
                               ec2ui_session,

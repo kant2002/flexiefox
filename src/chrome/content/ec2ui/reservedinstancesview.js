@@ -44,7 +44,7 @@ var ec2ui_ReservedInstancesTreeView = {
     viewDetails : function(event) {
         var image = this.getSelectedImage();
         if (image == null) return;
-        window.openDialog("chrome://ec2ui/content/dialog_reserved_instances_details.xul",
+        window.openDialog("chrome://flexiefox/content/dialog_reserved_instances_details.xul",
                           null,
                           "chrome,centerscreen,modal",
                           image);

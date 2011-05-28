@@ -1,6 +1,6 @@
 var ec2ui_credentialManager = {
-    REALM : "chrome://ec2ui/",
-    HOST  : "chrome://ec2ui/",
+    REALM : "chrome://flexiefox/",
+    HOST  : "chrome://flexiefox/",
     credentials : new Array(),
 
     initDialog : function() {

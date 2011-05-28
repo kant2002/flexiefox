@@ -57,7 +57,7 @@ var ec2ui_LeaseOfferingsTreeView = {
     viewDetails : function(event) {
         var image = this.getSelectedImage();
         if (image == null) return;
-        window.openDialog("chrome://ec2ui/content/dialog_offering_details.xul",
+        window.openDialog("chrome://flexiefox/content/dialog_offering_details.xul",
                           null,
                           "chrome,centerscreen,modal",
                           image);
@@ -72,7 +72,7 @@ var ec2ui_LeaseOfferingsTreeView = {
 
         while (fRepeat) {
             // Hand off receiving user input to a dialog
-            window.openDialog("chrome://ec2ui/content/dialog_purchase_offering.xul",
+            window.openDialog("chrome://flexiefox/content/dialog_purchase_offering.xul",
                               null,
                               "chrome,centerscreen,modal",
                               image,

@@ -82,7 +82,7 @@ var ec2ui_ElasticIPTreeView = {
         }
         if (selected.length != 1) return;
 
-        window.openDialog("chrome://ec2ui/content/dialog_eip_details.xul", null, "chrome,centerscreen,modal", selected[0]);
+        window.openDialog("chrome://flexiefox/content/dialog_eip_details.xul", null, "chrome,centerscreen,modal", selected[0]);
     },
 
     enableOrDisableItems : function() {

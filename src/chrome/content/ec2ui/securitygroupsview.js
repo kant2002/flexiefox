@@ -41,7 +41,7 @@ var ec2ui_SecurityGroupsTreeView = {
     viewDetails : function(event) {
         var group = this.getSelectedGroup();
         if (group == null) return;
-        window.openDialog("chrome://ec2ui/content/dialog_securitygroup_details.xul", null, "chrome,centerscreen,modal", group);
+        window.openDialog("chrome://flexiefox/content/dialog_securitygroup_details.xul", null, "chrome,centerscreen,modal", group);
     },
 
     sort : function() {
@@ -107,7 +107,7 @@ var ec2ui_SecurityGroupsTreeView = {
 
     createNewGroup : function () {
         var retVal = {ok:null,name:null,description:null};
-        window.openDialog("chrome://ec2ui/content/dialog_create_security_group.xul", null, "chrome,centerscreen,modal", ec2ui_session, retVal);
+        window.openDialog("chrome://flexiefox/content/dialog_create_security_group.xul", null, "chrome,centerscreen,modal", ec2ui_session, retVal);
 
         if (retVal.ok) {
             ec2ui_session.showBusyCursor(true);

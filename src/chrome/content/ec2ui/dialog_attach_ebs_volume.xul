@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
-<!DOCTYPE window SYSTEM "chrome://ec2ui/locale/ec2ui.dtd">
+<!DOCTYPE window SYSTEM "chrome://flexiefox/locale/ec2ui.dtd">
 
 <dialog id="ec2ui.dialog.attachebsvolume"
   xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
@@ -10,9 +10,9 @@
   onload="ec2_EBSVolumeAttacher.init();" title="Attach EBS Volume to Instance"
   buttonlabelaccept="Attach">
 
-  <script type="application/x-javascript" src="chrome://ec2ui/content/attachebsvolumedialog.js" />
-  <script type="application/x-javascript" src="chrome://ec2ui/content/model.js" />
-  <script type="application/x-javascript" src="chrome://ec2ui/content/utils.js" />
+  <script type="application/x-javascript" src="chrome://flexiefox/content/attachebsvolumedialog.js" />
+  <script type="application/x-javascript" src="chrome://flexiefox/content/model.js" />
+  <script type="application/x-javascript" src="chrome://flexiefox/content/utils.js" />
 
   <vbox flex="1">
     <grid flex="1">

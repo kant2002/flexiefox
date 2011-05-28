@@ -130,7 +130,7 @@ var ec2ui_InstancesTreeView = {
             ec2ui_session.controller.describeImage(instance.imageId);
         }
         window.openDialog(
-            "chrome://ec2ui/content/dialog_instance_details.xul",
+            "chrome://flexiefox/content/dialog_instance_details.xul",
             null,
             "chrome,centerscreen,modal",
             ec2ui_session,
@@ -209,7 +209,7 @@ var ec2ui_InstancesTreeView = {
 
         do {
             var bucketReg = null;
-            window.openDialog("chrome://ec2ui/content/dialog_bundle_instance.xul",
+            window.openDialog("chrome://flexiefox/content/dialog_bundle_instance.xul",
                               null,
                               "chrome,centerscreen,modal",
                               instance.id,
@@ -282,7 +282,7 @@ var ec2ui_InstancesTreeView = {
         var instance = this.getSelectedInstance();
         if (instance == null) return;
 
-        window.openDialog("chrome://ec2ui/content/dialog_create_image.xul",
+        window.openDialog("chrome://flexiefox/content/dialog_create_image.xul",
                           null,
                           "chrome,centerscreen,modal",
                           instance.id,
@@ -355,7 +355,7 @@ var ec2ui_InstancesTreeView = {
 
         var retVal = {ok:null, volumeId:null, device:null};
         window.openDialog(
-            "chrome://ec2ui/content/dialog_attach_ebs_volume.xul",
+            "chrome://flexiefox/content/dialog_attach_ebs_volume.xul",
             null,
             "chrome,centerscreen,modal",
             ec2ui_session,
@@ -407,7 +407,7 @@ var ec2ui_InstancesTreeView = {
 
         var retVal = {ok:null,eipMap:null};
         window.openDialog(
-            "chrome://ec2ui/content/dialog_select_eip.xul",
+            "chrome://flexiefox/content/dialog_select_eip.xul",
             null,
             "chrome,centerscreen,modal",
             ec2ui_session,
@@ -947,7 +947,7 @@ var ec2ui_InstancesTreeView = {
 
     showConsoleOutput : function(id, timestamp, output) {
         window.openDialog(
-            "chrome://ec2ui/content/dialog_console_output.xul",
+            "chrome://flexiefox/content/dialog_console_output.xul",
             null,
             "chrome,centerscreen,modal",
             id,

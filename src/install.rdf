@@ -22,9 +22,9 @@
     <!-- Front End MetaData -->
     <em:name>Flexifox</em:name>
     <em:description>A graphical interface to Amazon's EC2 web service.</em:description>
-    <em:creator>James Greenfield (icons originally by Ken Saunders http://www.mouserunner.com)</em:creator>
-    <em:homepageURL>http://ec2-184-73-192-99.compute-1.amazonaws.com/ec2ui/</em:homepageURL>
-    <!-- <em:updateURL>http://ec2-184-73-192-99.compute-1.amazonaws.com/ec2ui/ec2ui.rdf</em:updateURL> -->
+    <em:creator>Andrey Kurdyumov, originally created by James Greenfield, icons originally by Ken Saunders http://www.mouserunner.com</em:creator>
+    <em:homepageURL>http://code.google.com/p/flexiefox/</em:homepageURL>
+    <!--<em:updateURL>http://flexiefox.googlecode.com/files/ec2ui.rdf</em:updateURL>-->
   </Description>
 
   <Description about="urn:mozilla:extension:file:awsui.jar"

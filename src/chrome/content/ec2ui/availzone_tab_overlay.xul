@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
-<?xml-stylesheet href="chrome://ec2ui/skin/ec2ui.css" type="text/css"?>
-<!DOCTYPE overlay SYSTEM "chrome://ec2ui/locale/ec2ui.dtd">
+<?xml-stylesheet href="chrome://flexiefox/skin/ec2ui.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://flexiefox/locale/ec2ui.dtd">
 
 <overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
   <tabpanel id="availzones_tab" flex="1">

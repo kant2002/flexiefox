@@ -92,7 +92,7 @@ var ec2ui_VpnConnectionTreeView = {
            return;
         }
 
-        window.openDialog("chrome://ec2ui/content/dialog_vpnconnection_customer_config.xul",
+        window.openDialog("chrome://flexiefox/content/dialog_vpnconnection_customer_config.xul",
                           null,
                           "chrome,centerscreen,modal",
                           ec2ui_session,
@@ -130,7 +130,7 @@ var ec2ui_VpnConnectionTreeView = {
 
     createVpnConnection : function(cgwid, vgwid) {
         var retVal = {ok:null, vgwid: vgwid, cgwid: cgwid, type:null}
-        window.openDialog("chrome://ec2ui/content/dialog_create_vpn_connection.xul", null, "chrome,centerscreen,modal", ec2ui_session, retVal);
+        window.openDialog("chrome://flexiefox/content/dialog_create_vpn_connection.xul", null, "chrome,centerscreen,modal", ec2ui_session, retVal);
 
         if (retVal.ok) {
             ec2ui_session.showBusyCursor(true);

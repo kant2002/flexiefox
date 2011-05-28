@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
-<!DOCTYPE window SYSTEM "chrome://ec2ui/locale/ec2ui.dtd">
+<!DOCTYPE window SYSTEM "chrome://flexiefox/locale/ec2ui.dtd">
 
 <dialog id="ec2ui.dialog.createdhcpoptions"
     xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
@@ -9,8 +9,8 @@
     ondialogcancel="return true;" onload="ec2_DhcpoptsCreator.init();"
     title="Create a new DHCP Options Set" buttonlabelaccept="Create DHCP Options Set">
 
-    <script type="application/x-javascript" src="chrome://ec2ui/content/create_dhcp_options_dialog.js" />
-    <script type="application/x-javascript" src="chrome://ec2ui/content/model.js" />
+    <script type="application/x-javascript" src="chrome://flexiefox/content/create_dhcp_options_dialog.js" />
+    <script type="application/x-javascript" src="chrome://flexiefox/content/model.js" />
 
     <vbox flex="1">
         <label value="Enter values for the DHCP options you wish to set."/>
