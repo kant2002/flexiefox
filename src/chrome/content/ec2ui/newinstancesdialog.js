@@ -12,6 +12,7 @@ var ec2_InstanceLauncher = {
     launch : function() {
         if (!this.validateMin()) return false;
         if (!this.validateMax()) return false;
+        if (!this.validateOverrideRootVolumeSize()) return false;
 
         this.retVal.imageId = this.image.id;
         this.retVal.kernelId = document.getElementById("ec2ui.newinstances.aki").value;
@@ -82,9 +83,10 @@ var ec2_InstanceLauncher = {
         var overrideRootVolumeSize = parseInt(overrideRootVolumeSizeTextBox.value);
         if (overrideRootVolumeSize <= 0 || isNaN(overrideRootVolumeSize)) {
             alert("Size of root volume must be a positive integer");
-            maxtextbox.select();
+            overrideRootVolumeSizeTextBox.select();
             return false;
         }
+        return true;
     },
 
     validateMax : function() {
@@ -93,6 +95,7 @@ var ec2_InstanceLauncher = {
         var maxval = parseInt(maxtextbox.value);
         if (maxval <= 0 || isNaN(maxval)) {
             alert("Maximum value must be a positive integer");
+            maxtextbox.select();
             return false;
         }
         var mintextbox = document.getElementById("ec2ui.newinstances.min");

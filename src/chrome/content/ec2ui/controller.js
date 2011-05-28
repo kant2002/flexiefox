@@ -960,16 +960,14 @@ var ec2ui_controller = {
         for(var i in securityGroups) {
             params.push(["SecurityGroup."+(i+1), securityGroups[i]]);
         }
-        for(var i in blockDeviceMappings) {
-            var blockDeviceDefinition = blockDeviceMappings[i];
-            params.push(["BlockDeviceMapping."+(i+1)+".DeviceName", blockDeviceDefinition.deviceName]);
-alert("BlockDeviceMapping."+(i+1)+".DeviceName");
-alert(blockDeviceDefinition.deviceName);
-alert("BlockDeviceMapping."+(i+1)+".Ebs.VolumeSize");
-alert(blockDeviceDefinition.volumeSize);
-//            params.push(["BlockDeviceMapping."+(i+1)+".Ebs.SnapshotId", ""]);
-            params.push(["BlockDeviceMapping."+(i+1)+".Ebs.VolumeSize", blockDeviceDefinition.volumeSize]);
-            log(blockDeviceDefinition);
+        if (blockDeviceMappings) {
+            // Added only these parameters, which was required to 
+            // resizing EBS. Other parameters should be added as well.
+            for(var i in blockDeviceMappings) {
+                var blockDeviceDefinition = blockDeviceMappings[i];
+                params.push(["BlockDeviceMapping."+(i+1)+".DeviceName", blockDeviceDefinition.deviceName]);
+                params.push(["BlockDeviceMapping."+(i+1)+".Ebs.VolumeSize", blockDeviceDefinition.volumeSize]);
+            }
         }
         if (userData != null) {
             var b64str = "Base64:";
