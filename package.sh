@@ -7,7 +7,7 @@ BASE=`basename build/*-*.*.*`
 pushd build/$BASE > /dev/null 
   # package an xpi
   echo "+ Creating dist/$BASE.xpi"
-  zip -9 ../../dist/$BASE.xpi install.* chrome.manifest chrome/flexiefox.jar README LICENSE
+  zip -9 ../../dist/$BASE.xpi install.* chrome.manifest chrome/flexiefox.jar defaults/preferences/* README LICENSE
 
   cp README LICENSE ../../dist
 popd > /dev/null
