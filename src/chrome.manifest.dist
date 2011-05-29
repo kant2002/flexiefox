@@ -4,3 +4,4 @@ content	flexiefox	jar:chrome/flexiefox.jar!/content/ec2ui/
 skin	flexiefox	classic/1.0	jar:chrome/flexiefox.jar!/skin/classic/ec2ui/
 
 locale	flexiefox	en-US	jar:chrome/flexiefox.jar!/locale/ec2ui/en-US/
+locale	flexiefox	ru-RU	jar:chrome/flexiefox.jar!/locale/ec2ui/ru-RU/
