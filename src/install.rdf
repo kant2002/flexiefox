@@ -20,16 +20,29 @@
     </em:targetApplication>
 
     <!-- Front End MetaData -->
+    <em:localized>
+      <Description>
+        <em:locale>ru-RU</em:locale>
+        <em:name>Flexifox</em:name>
+        <em:description>Графический интерфейс для сервиса Amazon EC2.</em:description>
+      </Description>
+      <Description>
+        <em:locale>en-US</em:locale>
+        <em:name>Flexifox</em:name>
+    	<em:description>A graphical interface to Amazon's EC2 web service.</em:description>
+      </Description>
+    </em:localized>
     <em:name>Flexifox</em:name>
     <em:description>A graphical interface to Amazon's EC2 web service.</em:description>
     <em:creator>Andrey Kurdyumov, originally created by James Greenfield, icons originally by Ken Saunders http://www.mouserunner.com</em:creator>
+    
     <em:homepageURL>http://code.google.com/p/flexiefox/</em:homepageURL>
     <!--<em:updateURL>http://flexiefox.googlecode.com/files/ec2ui.rdf</em:updateURL>-->
   </Description>
 
-  <Description about="urn:mozilla:extension:file:awsui.jar"
+  <!--Description about="urn:mozilla:extension:file:flexiefox.jar"
                    em:package="content/ec2ui/"
                    em:skin="skin/classic/ec2ui/">
     <em:locale>locale/ec2ui/en-US/</em:locale>
-  </Description>
+  </Description-->
 </RDF>
