@@ -32,7 +32,7 @@ else
     export SED_ARGS="-i"
 fi
 
-export PKG_VERSION=1.0.4
+export PKG_VERSION=1.0.5
 export PKG_RELEASE=$(get_pkg_release)
 export PKG_NAME=flexiefox
 export BASE=$PKG_NAME-$PKG_VERSION.$PKG_RELEASE
